@@ -14,7 +14,6 @@ const WorkerItem = ({user}) => (
             CPF: {user.cpf}
             Status: {(user.active === true) ? 'Ativo' : 'Inativo'}
         </div>
-
     </div>
 )
 

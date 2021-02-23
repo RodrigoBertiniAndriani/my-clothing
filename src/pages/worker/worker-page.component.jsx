@@ -30,7 +30,6 @@ class WorkerPage extends React.Component{
     }
     
     render(){
-        console.log(this.state.dataUser);
         return(
             this.state.dataUser.map((user) => 
                 <WorkerItem 
