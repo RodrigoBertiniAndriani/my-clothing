@@ -1,0 +1,19 @@
+.worker-item{
+    border: 1px solid rgb(167, 167, 167);
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    
+    .header{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+    }
+    
+    .body{
+        display: flex;
+    }
+}

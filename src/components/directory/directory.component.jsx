@@ -11,41 +11,41 @@ class Directory extends Component{
         this.state = {
             sections: [
                 {
-                    title: 'hats',
-                    subtitle: 'SHOP NOW',
-                    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 1,
-                    linkUrl: 'hats'
+                    title: 'Produtos',
+                    subtitle: 'MAIS...',
+                    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                    linkUrl: 'produtos'
                 },
                 {
-                    title: 'jackets',
-                    subtitle: 'SHOP NOW',
-                    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 2,
-                    linkUrl: 'jackets'
+                    title: 'Serviços',
+                    subtitle: 'MAIS...',
+                    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                    linkUrl: 'servicos'
                 },
                 {
-                    title: 'sneakers',
-                    subtitle: 'SHOP NOW',
-                    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
                     id: 3,
-                    linkUrl: 'sneakers'
+                    title: 'Tecnologia',
+                    subtitle: 'MAIS...',
+                    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                    linkUrl: 'tecnologia'
                 },
                 {
-                    title: 'womens',
-                    subtitle: 'SHOP NOW',
+                    id: 4,
+                    title: 'Quem somos',
+                    subtitle: 'MAIS...',
                     imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
                     size: 'large',
-                    id: 4,
-                    linkUrl: 'womens'
+                    linkUrl: 'quemsomos'
                 },
                 {
-                    title: 'mens',
-                    subtitle: 'SHOP NOW',
+                    id: 5,
+                    title: 'Notícias',
+                    subtitle: 'MAIS...',
                     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                     size: 'large',
-                    id: 5,
-                    linkUrl: 'mens'
+                    linkUrl: 'noticias'
                 },
             ]
         }
