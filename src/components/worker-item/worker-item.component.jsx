@@ -2,17 +2,17 @@ import React from 'react';
 
 import './worker-item.styles.scss';
 
-const WorkerItem = ({user}) => (
+const WorkerItem = ({worker}) => (
     <div className="worker-item">
         <div className="header">
-                {user.first_name} {user.last_name}
+                {worker.first_name} {worker.last_name}
         </div>
         <div className="body">
-            {user.email}
-            {(user.gender === 'M') ? ' Masculino' : 'Feminino'}
-            RG: {user.rg}
-            CPF: {user.cpf}
-            Status: {(user.active === true) ? 'Ativo' : 'Inativo'}
+            {worker.email}
+            {(worker.gender === 'M') ? ' Masculino' : 'Feminino'}
+            RG: {worker.rg}
+            CPF: {worker.cpf}
+            Status: {(worker.active === true) ? 'Ativo' : 'Inativo'}
         </div>
     </div>
 )
