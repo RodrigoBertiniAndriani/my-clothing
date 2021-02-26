@@ -1,13 +1,19 @@
 import './App.css';
+
 import HomePage from './pages/homepage/homepage.component.jsx';
-import SignInSignUp from './pages/signin-signup/signin-signup.component.jsx';
 import ShopPage from './pages/shop/shop.component.jsx';
+import CheckoutPage from './pages/checkout/checkout.component.jsx';
+import SignInSignUp from './pages/signin-signup/signin-signup.component.jsx';
+
+import { Component } from 'react';
 import Header from './components/header/header.component.jsx';
+
 import { Route, Switch , Redirect } from 'react-router-dom';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { Component } from 'react';
+
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
+import { selectCurrentUser } from './redux/user/user.selector';
 
 class App extends Component{
   
@@ -51,6 +57,7 @@ class App extends Component{
                 : (<SignInSignUp/>)
             }
           />
+          <Route exact path='/checkout' component={ CheckoutPage }></Route>
         </Switch>
       </div>
     )
@@ -59,8 +66,12 @@ class App extends Component{
 
 // Mapeia as propriedades de estado do root-reducer{user-reducer}
 const mapStateToProps = ( state ) => ({
-  currentUser: state.user.currentUser
+  currentUser: selectCurrentUser(state)
 })
+
+// const mapStateToProps = createStructuredSelector({
+//   currentUser: selectCurrentUser
+// })
 
 // Adiciona uma function nas props que dispara uma action
 const mapDispatchToProps = dispatch => ({
