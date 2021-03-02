@@ -1,20 +1,20 @@
 import React from 'react';
-import CollectionItem from '../collection/collection-item.component';
+import ShopItem from '../shop-item/shop-item.component';
 
-import './preview-collection.styles.scss';
+import './shop-preview.styles.scss';
 
-const PreviewCollection = ({title, items }) => (
-    <div className="preview-collection">
+const PreviewShop = ({title, items }) => (
+    <div className="preview-shop">
         <h1 className="title">{title.toUpperCase()}</h1>
         <div className="preview">
             {items
                 .filter((item, index) => index < 4)
                 .map((item) => (
-                    <CollectionItem key={item.id} item={item}/>
+                    <ShopItem key={item.id} item={item}/>
                 ))
             }    
         </div>
     </div>   
 )
 
-export default PreviewCollection;
+export default PreviewShop;
