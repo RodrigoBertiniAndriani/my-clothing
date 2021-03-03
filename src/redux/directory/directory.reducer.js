@@ -2,40 +2,40 @@ const INITIAL_STATE = {
     sections: [
         {
             id: 1,
-            title: 'Produtos',
+            title: 'Hats',
             subtitle: 'MAIS...',
             imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-            linkUrl: 'produtos'
+            linkUrl: 'shop/hats'
         },
         {
             id: 2,
-            title: 'Serviços',
+            title: 'Jackets',
             subtitle: 'MAIS...',
             imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-            linkUrl: 'servicos'
+            linkUrl: 'shop/jackets'
         },
         {
             id: 3,
-            title: 'Tecnologia',
+            title: 'Sneakers',
             subtitle: 'MAIS...',
             imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-            linkUrl: 'tecnologia'
+            linkUrl: 'shop/sneakers'
         },
         {
             id: 4,
-            title: 'Quem somos',
+            title: 'Womens',
             subtitle: 'MAIS...',
             imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
             size: 'large',
-            linkUrl: 'quemsomos'
+            linkUrl: 'shop/womens'
         },
         {
             id: 5,
-            title: 'Notícias',
+            title: 'Mens',
             subtitle: 'MAIS...',
             imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
             size: 'large',
-            linkUrl: 'noticias'
+            linkUrl: 'shop/mens'
         },
     ]
 }

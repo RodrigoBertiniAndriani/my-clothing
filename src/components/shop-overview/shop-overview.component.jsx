@@ -1,19 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectShop }  from '../../redux/shop/shop.selector';
-import PreviewShop from '../../components/shop-preview/shop-preview.component';
+import { selectMappedShopObject }  from '../../redux/shop/shop.selector';
 import './shop-overview.styles.scss';
+import ShopPreview from '../../components/shop-preview/shop-preview.component';
 
 const ShopOverview = ({ shop }) => (
     <div className='shop-overview'>
-        {shop.map(({ id, ...otherProps }) => (
-            <PreviewShop key={id} {...otherProps} />
+        {
+            shop.map(({ id, ...otherProps }) => (
+                <ShopPreview key={id} {...otherProps} />
         ))}
     </div>
 )
 
-const mapPropToState = ( state ) => ({
-    shop: selectShop(state)
+const mapStateToProps = ( state ) => ({
+    shop: selectMappedShopObject(state)
 })
 
-export default connect(mapPropToState)(ShopOverview);
+export default connect(mapStateToProps)(ShopOverview);
